@@ -1,5 +1,3 @@
-// const { url } = require("inspector");
-// const { hostname } = require("os");
 const {URL}=require("url");
 
 function parseURL(){
