@@ -1,7 +1,6 @@
 const Doctor = require('../models/doctor.model');
 const Consultation = require('../models/consultation.model');
 
-// Create Doctor
 exports.createDoctor = async (req, res) => {
   try {
     const doctor = await Doctor.create(req.body);
@@ -11,7 +10,6 @@ exports.createDoctor = async (req, res) => {
   }
 };
 
-// Soft delete Doctor + related consultations
 exports.deleteDoctor = async (req, res) => {
   try {
     const doctor = await Doctor.findById(req.params.id);
@@ -27,7 +25,6 @@ exports.deleteDoctor = async (req, res) => {
   }
 };
 
-// Get patients consulted by a doctor
 exports.getDoctorPatients = async (req, res) => {
   try {
     const n = parseInt(req.query.limit) || 10; // optional ?limit=n
@@ -49,7 +46,6 @@ exports.getDoctorPatients = async (req, res) => {
   }
 };
 
-// Count consultations for a doctor
 exports.getDoctorConsultationCount = async (req, res) => {
   try {
     const count = await Consultation.countDocuments({

@@ -2,7 +2,6 @@ const Consultation = require('../models/consultation.model');
 const Doctor = require('../models/doctor.model');
 const Patient = require('../models/patient.model');
 
-// Add consultation only if doctor & patient active
 exports.createConsultation = async (req, res) => {
   try {
     const { doctorId, patientId, notes } = req.body;
@@ -24,7 +23,6 @@ exports.createConsultation = async (req, res) => {
   }
 };
 
-// Get recent 5 consultations
 exports.getRecentConsultations = async (req, res) => {
   try {
     const consultations = await Consultation.find({ isActive: true })

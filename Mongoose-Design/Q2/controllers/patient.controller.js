@@ -1,7 +1,6 @@
 const Patient = require('../models/patient.model');
 const Consultation = require('../models/consultation.model');
 
-// Create Patient
 exports.createPatient = async (req, res) => {
   try {
     const patient = await Patient.create(req.body);
@@ -11,7 +10,6 @@ exports.createPatient = async (req, res) => {
   }
 };
 
-// Soft delete Patient + related consultations
 exports.deletePatient = async (req, res) => {
   try {
     const patient = await Patient.findById(req.params.id);
@@ -27,7 +25,6 @@ exports.deletePatient = async (req, res) => {
   }
 };
 
-// Get doctors consulted by a patient
 exports.getPatientDoctors = async (req, res) => {
   try {
     const consultations = await Consultation.find({
@@ -46,7 +43,6 @@ exports.getPatientDoctors = async (req, res) => {
   }
 };
 
-// Get all active patients (filter by gender)
 exports.getPatientsByGender = async (req, res) => {
   try {
     const gender = req.query.gender;
