@@ -1,6 +1,5 @@
------------------------------------
+
 1. List of books borrowed by each borrower
------------------------------------
 db.loans.aggregate([
   {
     $lookup: {
@@ -19,9 +18,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 2. Top 3 most borrowed books
------------------------------------
 db.loans.aggregate([
   {
     $group: {
@@ -49,9 +46,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 3. Borrower’s loan history with book details (borrowerId = User1)
------------------------------------
 db.loans.aggregate([
   { $match: { borrowerId: "User1" } },
   {
@@ -76,9 +71,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 4. Borrowers who have borrowed more than 2 books
------------------------------------
 db.loans.aggregate([
   {
     $group: {
@@ -105,9 +98,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 5. Full report of all loans (with borrower name and book title)
------------------------------------
 db.loans.aggregate([
   {
     $lookup: {
@@ -139,9 +130,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 6. Genre-wise count of borrowed books
------------------------------------
 db.loans.aggregate([
   {
     $lookup: {
@@ -160,9 +149,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 7. Current borrowed books (status = "Borrowed") with borrower and book title
------------------------------------
 db.loans.aggregate([
   { $match: { status: "Borrowed" } },
   {
@@ -194,9 +181,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 8. Number of returned books per borrower
------------------------------------
 db.loans.aggregate([
   { $match: { status: "Returned" } },
   {
@@ -223,9 +208,7 @@ db.loans.aggregate([
   }
 ])
 
------------------------------------
 9. Borrowers who borrowed multiple genres
------------------------------------
 db.loans.aggregate([
   {
     $lookup: {
@@ -252,9 +235,7 @@ db.loans.aggregate([
   { $match: { genreCount: { $gt: 1 } } }
 ])
 
------------------------------------
 10. List borrowers with total borrow count and names
------------------------------------
 db.loans.aggregate([
   {
     $group: {
