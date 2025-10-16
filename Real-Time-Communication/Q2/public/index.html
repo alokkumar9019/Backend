@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Group Chat</title>
+  <style>
+    #chat { height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 5px; }
+    #users { border: 1px solid #ccc; padding: 5px; margin-top: 10px; }
+    .admin { font-weight: bold; color: darkred; }
+  </style>
+</head>
+<body>
+  <h2>Real-Time Group Chat</h2>
+  
+  <input id="name" placeholder="Enter your name">
+  <button id="registerBtn">Join Chat</button>
+  <button id="disconnectBtn">Disconnect</button>
+
+  <h3>Online Users</h3>
+  <div id="users"></div>
+
+  <h3>Chat</h3>
+  <div id="chat"></div>
+  <input id="messageInput" placeholder="Type a message">
+  <button id="sendBtn">Send</button>
+  <button id="adminBroadcastBtn">Admin Broadcast</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
