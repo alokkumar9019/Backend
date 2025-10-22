@@ -1,0 +1,52 @@
+Q1 - What is Artificial Intelligence (AI)?
+Ans: Artificial Intelligence (AI) means making computers or machines think and act like humans. It helps them learn from data, recognize patterns (like faces or voices), solve problems, make decisions, and understand language. AI is used to make our lives easier — like in chatbots, healthcare tools, self-driving cars, or online recommendations.
+
+Q2 - What are Large Language Models (LLMs)? How do they work?
+Ans: Large Language Models (LLMs) are smart computer programs that can read, write, and understand human language. They are trained on a lot of text from books, websites, and articles so they can learn how people use words and sentences.
+
+How they work (in simple steps):
+1. The text is broken into small parts called tokens (like words or pieces of words).
+2. These tokens are changed into numbers so the computer can understand them.
+3. The model then uses a special system called a transformer to understand the meaning and relationships between words.
+4. It predicts the next word in a sentence, based on what came before.
+5. Finally, it generates answers, paragraphs, or even conversations based on your question or prompt.
+
+Q3 - What is the difference between Traditional AI and Generative AI?
+Traditional AI:
+- Works on fixed rules or smaller models.
+- Used for tasks like classifying data or making predictions (e.g., “spam or not spam”).
+- The output is usually a single answer or label.
+
+Generative AI:
+- Can create new things like text, images, music, or videos.
+- Uses advanced models such as ChatGPT or DALL·E.
+- Can generate creative and realistic content.
+- Needs large data and more computing power.
+
+Q4 - What is “prompting” in LLMs and why is it important?
+Ans: Prompting means giving the AI a question or instruction to tell it what you want. The prompt guides how the AI responds. For example, if you ask, “Write a poem about rain,” that is your prompt.
+
+Why it matters:
+- The clearer your prompt, the better the answer.
+- The AI can follow examples in your prompt to learn your style or format.
+- Good prompts help save time, reduce confusion, and make outputs safer and more useful.
+
+Q5 - What are “tokens” in a language model and how do they affect the output?
+Ans: Tokens are small parts of text that the AI reads and writes — like words or word pieces. For example, “playing” might be split into “play” and “ing.”
+
+Why tokens matter:
+- The model processes tokens one by one to understand and respond.
+- Each model has a token limit (like a word limit). If you go over it, the AI may forget earlier parts.
+- Using more tokens takes more time and may cost more in paid systems.
+- Good token usage helps the AI work faster and stay on topic.
+
+Q6 - What are the limitations or risks of using Generative AI models like ChatGPT?
+Ans:
+1. Wrong answers: AI can sound confident but still give false or made-up facts.
+2. Bias: It may reflect unfair or biased opinions found in its training data.
+3. Privacy: If you share personal info in prompts, it might not stay private.
+4. Over-trust: People may depend too much on AI instead of checking facts.
+5. Misuse: It can be used for harmful things like fake news or scams.
+6. Complexity: It’s hard to explain why AI gives a certain answer.
+7. Unstable output: Small changes in prompts can change answers a lot.
+8. High cost: Running and training big AI models needs a lot of power and energy.
