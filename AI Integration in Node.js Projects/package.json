@@ -1,0 +1,19 @@
+{
+  "name": "smart-recipe-generator",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "puppeteer": "^20.8.0",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": { "node": ">=18" }
+}
